@@ -24,7 +24,7 @@ def parse_input_file(input_filename):
 
             if key == 'result url':
                 rows.append(row_data)
-                row_data = {}
+                row_data = {'time': ''}
 
         return rows
 
