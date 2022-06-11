@@ -30,7 +30,7 @@ def parse_input_file(input_filename):
 
 
 def write_output_file(output_filename, rows):
-    with open(output_filename, 'w') as output_file:
+    with open(output_filename, 'w', newline='') as output_file:
         field_names = rows[0].keys()
         writer = csv.DictWriter(output_file, field_names, quoting=csv.QUOTE_ALL)
         writer.writeheader()
